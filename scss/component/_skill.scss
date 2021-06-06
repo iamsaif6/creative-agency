@@ -1,0 +1,47 @@
+.skill{
+
+
+    .row{
+        @include respond(700px){
+            flex-direction: column;
+        }
+    }
+
+    .col-1-of-3{
+
+
+        @include respond(700px){
+            width: 60%;
+            margin: 0 !important;
+            margin-bottom: 3rem !important;
+        }
+
+        @include respond(500px){
+            width: 80%;
+            margin: 0 !important;
+            margin-bottom: 3rem !important;
+        }
+    }
+
+    &__wrap{
+        text-align: center;
+        padding: 3rem;
+
+        @include respond(800px){
+            padding: 0;
+        }
+    }
+
+    &__img{
+        width: auto;
+        height: 6rem;
+    }
+
+    &__title{
+        color: #7D7D7D;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1.2rem;
+        margin-top: 3rem;
+    }
+}

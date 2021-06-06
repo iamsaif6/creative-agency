@@ -1,0 +1,49 @@
+
+:root{
+    --color-primary: #919ab4;
+    --color-secondary: #DA9CE8;
+    --color-black: #000;
+    --color-gray-light: #B0AEAE;
+    --color-gray-dark: #7D7D7D;
+}
+
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:link{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color:var(--primary-color) ;
+    overflow-x: hidden;
+
+}
+    
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    @include respond(1200px){
+        font-size: 50%;
+    }
+}
+    
+
+*::selection{
+    background-color: #DE9ED8;
+    color: #fff;
+}
+
+

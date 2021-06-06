@@ -1,0 +1,61 @@
+.btn{
+
+
+    &,
+    &:link,
+    &:active,
+    &:visited{
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 1.4rem;
+        border-radius: 100px;
+        display: inline-block;
+        transition: all .3s;
+        outline: none;
+        cursor: pointer;
+        border: none;
+    }
+    &--shadow{
+        box-shadow: 0 .3rem 2rem rgba(0,0,0,.2);  
+
+        &:hover{
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
+        }
+
+        &:active{
+            transform: translateY(2px);
+            box-shadow: 0 .5rem 2rem rgba(0,0,0,.2);
+        }
+    }
+
+
+    &--color{
+        color: #fff;
+        
+        padding: 1.3rem 5rem;
+        margin-top: 1rem;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        background-image: linear-gradient(160deg, #DA9FE8 , #F4D7D1);
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(160deg, #F4D7D1 , #DA9FE8); 
+            z-index: -1;
+            transition: all .3s;
+            opacity: 0;
+        }
+
+        &:hover::after{
+            opacity: 1;
+        }
+
+        
+    }
+}
